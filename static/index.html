@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PawLens</title>
+    <link rel="stylesheet" href="/static/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <script src="/static/script.js"></script>
+  </head>
+  <body class="">
+    <header>
+      <div id="header-container">
+        <h2>PawLens</h2>
+        <i class="fa fa-paw" aria-hidden="true" id="paw-icon"></i>
+      </div>
+      <div id="mode-icons">
+        <i class="fa fa-sun" aria-hidden="true" id="sun-icon"></i>
+        <i class="fa fa-moon" aria-hidden="true" id="moon-icon"></i>
+      </div>
+    </header>
+    <div id="title">
+      <h1>Find Visually Similar Images</h1>
+      <p>Upload an image or drag and drop it below</p>
+    </div>
+    <section id="section">
+      <div id="drop-zone" class="drop-zone">
+        <i
+          class="fa fa-file-image fa-2x"
+          aria-hidden="true"
+          id="image-icon"
+        ></i>
+        <p id="upload-img-text">Upload an Image</p>
+        <p id="drop-text">Drag and drop your image here or click to browse</p>
+        <div id="select-image">
+          <i class="fa fa-angle-up" aria-hidden="true" id="upload-icon"></i>
+          <span id="select-image-text">Select Image</span>
+        </div>
+
+        <input
+          type="file"
+          id="file-input"
+          accept="image/*"
+          style="display: none"
+        />
+      </div>
+
+      <div id="whole-about-zone">
+        <img src="/static/cat-peeking.png" alt="" id="cat-peeking" />
+        <img
+          src="/static/white-cat-peeking.png"
+          alt=""
+          id="white-cat-peeking"
+        />
+        <div id="about-zone">
+          <div id="history-zone">
+            <h3 id="access-history-text">Access History</h3>
+            <div id="history-btn">
+              <i class="fa fa-history" aria-hidden="true" id="history-icon"></i>
+              <span id="search-history-btn-text">Search History</span>
+            </div>
+          </div>
+          <div id="about-text">
+            <h3 id="about-word">About</h3>
+            <p>
+              This advanced image search engine uses visual recognition
+              technology to find images that are visually similar to your
+              uploaded image.
+              <br />
+              <br />
+              The search analyzes various visual properties including colors,
+              shapes, textures and objects within the image.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="query-result-zone" class="hidden">
+      <div id="query-container">
+        <h4>Chosen Image</h4>
+        <img id="query-image" src="#" alt="Query Image" style="display: none" />
+      </div>
+
+      <div id="results-container">
+        <h3>Similar Images</h3>
+        <div id="results"></div>
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <div class="sidebar-details">
+        <i class="fa fa-paw" aria-hidden="true" id="paw-icon"></i>
+        <div id="logo_name">PawLens</div>
+
+        <div id="history-images">
+          <div id="sidebar-desc">Search History</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+Flask
+numpy
+torch
+torchvision
+Pillow
+scikit-learn
+tqdm
